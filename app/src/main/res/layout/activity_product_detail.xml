@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProductDetailActivity">
+
+    <ScrollView
+        android:layout_width="394dp"
+        android:layout_height="831dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/layout_date_labels"
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/status_id"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="bottom"
+                    android:paddingStart="70dp"
+                    android:paddingTop="15dp"
+                    android:text="Start Date"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/divider"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/end_date_text"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="bottom"
+                    android:paddingStart="70dp"
+                    android:paddingTop="15dp"
+                    android:text="End Date"
+                    android:textColor="@color/divider"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_date"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@+id/layout_date_labels"
+                android:layout_marginTop="-14dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/date_picker_start"
+                    android:layout_width="197dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="Click to add date"
+                    android:paddingStart="15dp"
+                    android:paddingTop="15dp"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/divider"
+                    android:textColorHint="#DAD5D5"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/date_picker_end"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="Click to add date"
+                    android:paddingStart="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/divider"
+                    android:textColorHint="#DAD5D5"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_below="@+id/layout_date"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <com.lanka.rentalmangment.utils.CustomButton
+                    android:id="@+id/check_availability"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="90dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:elevation="3dp"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/register_button_style_selector"
+                    android:backgroundTint="@color/colorSecondary"
+                    android:gravity="center"
+                    android:text="Check Availability"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/productimage"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_below="@+id/layout_date"
+                android:layout_marginTop="82dp"
+                android:background="@color/white"
+                android:elevation="4dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/product_image_view_detail"
+                    android:layout_width="439dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:layout_below="@+id/productimage"
+                android:layout_marginTop="-5dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/product_name_detail"
+                    android:layout_width="257dp"
+                    android:layout_height="77dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="Product Name"
+                    android:textColor="@color/black"
+                    android:textSize="26sp" />
+
+
+                <TextView
+                    android:id="@+id/price_detail"
+                    android:layout_width="104dp"
+                    android:layout_height="81dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="$ 250"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating"
+                android:layout_marginTop="-20dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/quantity_text_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="quantity"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/owner_name_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="owner name"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/address_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="location"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/contact_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="contact"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rent_btn_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#0f4c75"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:elevation="3dp"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:paddingLeft="90dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="90dp"
+                    android:paddingBottom="12dp"
+                    android:text="RENT NOW"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/qut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/size"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#fe783d"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navLessorHome"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/navCategoryLessor"
+            android:icon="@drawable/list"
+            android:title="Manage Categories" />
+        <item
+            android:id="@+id/navMangeItems"
+            android:icon="@drawable/list"
+            android:title="Manage Items" />
+
+        <item
+            android:id="@+id/navLessorOrders"
+            android:icon="@drawable/order"
+            android:title="My orders" />
+        <item
+            android:id="@+id/navLessorProfile"
+            android:icon="@drawable/user"
+            android:title="Account" />
+        <item
+            android:id="@+id/navlessorlogout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+</menu>

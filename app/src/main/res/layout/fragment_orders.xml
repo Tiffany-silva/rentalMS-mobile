@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Fragments.OrdersDetailFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_l"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/order_tab_id"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:layout_below="@+id/order_toolbar_id"
+                android:layout_gravity="center"
+                android:background="@color/colorSecondary"
+                android:textAlignment="center"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:tabGravity="start"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorGravity="bottom"
+                app:tabIndicatorHeight="4dp"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="20dp"
+                app:tabPaddingStart="20dp"
+                app:tabPaddingTop="60dp"
+                app:tabSelectedTextColor="#FFFFFF"
+                app:tabTextColor="#CFC7C7" />
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/order_viewpager_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_tab_id"
+            android:background="#f5f0f2"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

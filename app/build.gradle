@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+
+    compileOptions {
+        // Flag to enable support for the new language APIs
+        coreLibraryDesugaringEnabled true
+        // Sets Java compatibility to Java 8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        // Required when setting minSdkVersion to 20 or lower
+//        multiDexEnabled true
+        applicationId "com.lanka.rentalmangment"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+
+        dataBinding = true
+
+        // for view binding:
+         viewBinding = true
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+
+    implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.8'
+    implementation 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    implementation 'androidx.work:work-runtime:2.4.0'
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    implementation 'com.airbnb.android:lottie:3.6.0'
+
+    implementation 'com.cocosw:bottomsheet:1.5.0'
+    implementation 'com.isseiaoki:simplecropview:1.1.4'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.amitshekhar.android:android-networking:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'com.github.hani-momanii:SuperNova-Emoji:1.1'
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:2.0.24@aar'
+    implementation 'com.github.florent37:singledateandtimepicker:1.2.2'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.0.9'
+
+
+}

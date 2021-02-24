@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+        tools:context="com.lanka.rentalmangment.Fragments.AddProductFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="801dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="343dp"
+                android:layout_height="33dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="70dp"
+                android:paddingBottom="10dp"
+                android:text="A D D  I T E M"
+
+                android:textAlignment="center"
+                android:textColor="#888787"
+                android:textSize="36sp" />
+
+
+            <Spinner
+                android:id="@+id/spinner_add_product"
+                android:layout_width="339dp"
+                android:layout_height="81dp"
+                android:paddingBottom="20dp"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+
+            <com.lanka.rentalmangment.utils.CustomEditText
+                android:id="@+id/name_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Item Name"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/editketext"
+                android:textSize="16sp" />
+
+            <com.lanka.rentalmangment.utils.CustomEditText
+                android:id="@+id/description_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Description"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/editketext"
+                android:textSize="16sp" />
+
+            <com.lanka.rentalmangment.utils.CustomEditText
+                android:id="@+id/price_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Price"
+                android:inputType="textCapWords"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/editketext"
+                android:textSize="16sp" />
+
+            <com.lanka.rentalmangment.utils.CustomEditText
+                android:id="@+id/quantity_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Quantity"
+                android:inputType="textCapWords"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/editketext"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/itemurl"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="30dp"
+                    android:text="Select Item Picture" />
+
+                <Button
+                    android:id="@+id/upload_pic"
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#CDCBCB"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="Select Image"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <com.lanka.rentalmangment.utils.CustomButton
+                android:id="@+id/add_item_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_selector2"
+                android:gravity="center"
+                android:text="Register Item"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RRsncbar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"></RelativeLayout>
+</RelativeLayout>

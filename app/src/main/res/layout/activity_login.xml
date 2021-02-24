@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    tools:context=".Activities.Login">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="391dp"
+        android:layout_height="115dp"
+
+        android:layout_marginTop="60dp"
+        android:contentDescription=""
+        android:src="@drawable/handshake" />
+
+    <LinearLayout
+        android:id="@+id/LLsign"
+        android:layout_width="391dp"
+        android:layout_height="329dp"
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginTop="128dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
+        <com.lanka.rentalmangment.utils.CustomEditText
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/editketext"
+            tools:ignore="RtlSymmetry" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_background">
+
+            <com.lanka.rentalmangment.utils.CustomEditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/ivEnterShow"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/editketext" />
+
+            <ImageView
+                android:id="@+id/ivEnterShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription=""
+                android:padding="5dp"
+                android:src="@drawable/ic_pass_invisible" />
+
+        </RelativeLayout>
+
+
+        <com.lanka.rentalmangment.utils.CustomButton
+            android:id="@+id/logout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_selector2"
+            android:text="LOGIN"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <com.lanka.rentalmangment.utils.CustomTextViewBold
+            android:id="@+id/btnForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="@string/forgotten_password"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.lanka.rentalmangment.utils.CustomTextView
+                android:id="@+id/btnReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Signup Instead?"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RRsncbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:layout_width="341dp"
+        android:layout_height="139dp"
+        android:layout_alignBottom="@+id/ivLogo"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="-158dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R E N T A L  M S"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:text="L O G I N"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_coordinate_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.lanka.rentalmangment.Fragments.AllOrdersOfUser">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"></com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/isAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="#9C9999" />
+        <include
+            android:id="@+id/include_orders_recycler_view"
+            layout="@layout/orders_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_bar_orders" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
